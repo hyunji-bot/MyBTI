@@ -10,10 +10,10 @@ class create_qna : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_qna)
 
-//        val intent = Intent(this, ::class.java) // 인텐트를 생성
+        val intent = Intent(this, create_result::class.java) // 인텐트를 생성
 
-//        nextbtn.setOnClickListener { // 버튼 클릭시 할 행동
-//            startActivity(intent)  // 화면 전환하기
+        nextbtn.setOnClickListener { // 버튼 클릭시 할 행동
+            startActivity(intent)  // 화면 전환하기
 //        }
     }
 }
