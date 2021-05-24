@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MyBTI</string>
+    <string name="title_ActivityMain">테스트 목록</string>
+    <string name="Button_MakingTest">테스트 만들기</string>
+    <string name="SampleB_1">샘플 테스트 1</string>
+    <string name="SampleB_2">샘플 테스트 2</string>
+    <string name="Start_Button">시작!</string>
+    <string name="Sample_IMG">TODO</string>
+    <string name="Sample_Titel">샘플 테스트 이름 입니다!</string>
+    <string name="todo">TODO</string>
+    <string name="todo">TODO</string>
+    <string name="Result">ENTP 포메라니안</string>
+    <string name="todo">TODO</string>
+    <string name="Result_longT">여기에 설명이 들어갑니다 여기에 설명이 들어갑니다\n\n여기에 설명이 들어갑니다 여기에 설명이 들어갑니다\n\n여기에 설명이 들어갑니다 여기에 설명이 들어갑니다\n\n여기에 설명이 들어갑니다 여기에 설명이 들어갑니다\n\n여기에 설명이 들어갑니다 여기에 설명이 들어갑니다</string>
+    <string name="Button_toMain">메인으로</string>
+    <string name="Button_Again">다시하기</string>
+    <string name="Button_share">공유하기</string>
+    <string name="todo">TODO</string>
+    <string name="Result_text">여기에 설명이 들어갑니다</string>
+</resources>
