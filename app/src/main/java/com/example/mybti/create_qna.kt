@@ -14,6 +14,6 @@ class create_qna : AppCompatActivity() {
 
         nextbtn.setOnClickListener { // 버튼 클릭시 할 행동
             startActivity(intent)  // 화면 전환하기
-//        }
+        }
     }
 }
