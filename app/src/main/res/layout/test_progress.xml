@@ -1,6 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <SeekBar
+        android:id="@+id/seekBar4"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="278dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="53dp"
+        android:max="3"
+        android:progress="0"
+        android:progressBackgroundTint="#FEA82F"
+        android:progressTint="#FEA82F"
+        android:thumbTint="#FF9100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="@id/toolbar4"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar4" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="31dp"
+        android:background="#FEA82F"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="MyBTI" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FEA82F"
+        android:contentDescription="@string/todo"
+        android:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar4"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar4"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="385dp"
+        android:layout_height="529dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar4">
+
+        <include
+            layout="@layout/question_4"
+            android:visibility="invisible" />
+
+        <include
+            layout="@layout/question_3"
+            android:visibility="invisible" />
+
+        <include
+            layout="@layout/question_2"
+            android:visibility="invisible" />
+
+        <include
+            layout="@layout/question_1"
+            android:visibility="visible" />
+
+
+    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
