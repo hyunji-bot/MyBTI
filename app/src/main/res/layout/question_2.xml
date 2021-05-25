@@ -11,7 +11,6 @@
         android:layout_width="135dp"
         android:layout_height="0dp"
         android:layout_marginBottom="29dp"
-        android:contentDescription="@string/todo"
         app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,20 +34,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/button11"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:backgroundTint="#FEA82F"
         android:fontFamily="@font/nexonfootballgothicl"
         android:text="@string/soju"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/button10"
+        app:layout_constraintBottom_toTopOf="@+id/button12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/button12"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:backgroundTint="#FEA82F"
@@ -59,7 +58,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button9" />
+        app:layout_constraintTop_toBottomOf="@+id/button11" />
 
     <TextView
         android:id="@+id/textView6"
@@ -71,7 +70,7 @@
         android:fontFamily="@font/nexonfootballgothicl"
         android:lineSpacingMultiplier="1.5"
         android:text="@string/que"
-        app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintBottom_toTopOf="@+id/button11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
