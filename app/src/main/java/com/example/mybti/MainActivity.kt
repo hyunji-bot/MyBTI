@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         val intent = Intent(this, create::class.java) // 인텐트를 생성
 
+
         Log.d("mbti", getIntent().hasExtra("mbti").toString())
         if(getIntent().hasExtra("mbti")) {
             val temp = getIntent().getParcelableExtra<MbtiTest>("mbti")
