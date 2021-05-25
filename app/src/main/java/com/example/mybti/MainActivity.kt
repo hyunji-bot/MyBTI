@@ -10,6 +10,11 @@ import android.provider.MediaStore
 import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.File
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_create.*
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     private val OPEN_GALLERY = 1
@@ -27,12 +32,10 @@ class MainActivity : AppCompatActivity() {
         intent.setType("image/*")
         startActivityForResult(intent, OPEN_GALLERY)
     }
-
-    @Override
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-
-        if(resultCode == Activity.RESULT_OK){
+    
+    /* 갤러리에서 이미지 불러오고 싶을 때 onActivityResult에 넣기
+    
+    if(resultCode == Activity.RESULT_OK){
             if(requestCode == OPEN_GALLERY) {
 
                 var currentImageUrl : Uri? = data?.data
@@ -51,6 +54,16 @@ class MainActivity : AppCompatActivity() {
         }
         else {
             Log.d("tag", "failed iamges")
+    */
+
+    @Override
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        val intent = Intent(this, create::class.java) // 인텐트를 생성
+
+        button6.setOnClickListener { // 버튼 클릭시 할 행동
+            startActivity(intent)  // 화면 전환하기
         }
     }
 
