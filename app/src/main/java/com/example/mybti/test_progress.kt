@@ -1,5 +1,6 @@
 package com.example.mybti
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_test_main_l.*
@@ -15,9 +16,11 @@ class test_progress : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_test_progress_l)
 
+        val intent = Intent(this, test_result::class.java) // 인텐트를 생성
+
         button8.setOnClickListener { // 버튼 클릭시 할 행동
 
-            setVisible(false)
+            startActivity(intent)  // 화면 전환하기
         }
 
         button9.setOnClickListener { // 버튼 클릭시 할 행동
