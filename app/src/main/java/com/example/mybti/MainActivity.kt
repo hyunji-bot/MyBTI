@@ -10,9 +10,6 @@ import android.provider.MediaStore
 import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.File
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_create.*
 import kotlinx.android.synthetic.main.activity_main.*
 
