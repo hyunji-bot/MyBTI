@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">MyBTI</string>
+    <string name="title_ActivityMain">테스트 목록</string>
+    <string name="Button_MakingTest">테스트 만들기</string>
+    <string name="SampleB_1">강아지 MBTI</string>
+    <string name="SampleB_2">샘플 테스트 2</string>
+    <string name="Start_Button">시작!</string>
+    <string name="Sample_IMG">TODO</string>
+    <string name="Sample_Titel">강아지 MBTI</string>
+    <string name="Result">ENTP 포메라니안</string>
+    <string name="Result_longT">당신은 활발한 강아지 포메라니안입니다.</string>
+    <string name="Button_toMain">메인으로</string>
+    <string name="Button_Again">다시하기</string>
+    <string name="Button_share">공유하기</string>
+    <string name="Result_text">당신은 활발한 강아지 포메라니안입니다.</string>
+    <string name="dog">귀여운 강아지와 산책나가기!</string>
+    <string name="cat">도도한 고양이와 집콕~~</string>
+    <string name="num">1번 질문</string>
+    <string name="que">쉬는 날 당신은 무엇을 할 것인가요?</string>
+    <string name="tank">아군을 지켜주는 든든한 탱커</string>
+    <string name="deal">이게임은 내가 캐리한다 딜러</string>
+    <string name="soju">나는 소주파</string>
+    <string name="beer">나는 맥주파</string>
+    <string name="zzam">나는 짬뽕</string>
+    <string name="zza">나는 짜장면</string>
+    <string name="_2">2번 문제</string>
+    <string name="num2">2번 질문</string>
+    <string name="num3">3번 질문</string>
+    <string name="num4">4번 질문</string>
 </resources>

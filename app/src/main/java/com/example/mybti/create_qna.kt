@@ -28,12 +28,11 @@ class create_qna : AppCompatActivity() {
             Log.d("tag", temp)
             val imageBytes = Base64.decode(temp, 0)
             val image = BitmapFactory.decodeByteArray(imageBytes, 0, imageBytes.size)
-            Log.d("tag", image.toString())
             mbtiTest.image.add(image)
         }
 
 
-        val intent = Intent(this, MainActivity::class.java) // 인텐트를 생성
+        val intent = Intent(this, activity_main::class.java) // 인텐트를 생성
 
         nextbtn.setOnClickListener { // 버튼 클릭시 할 행동
             saveTest()
@@ -78,13 +77,13 @@ class create_qna : AppCompatActivity() {
 
         mbtiTest.PorJQuestion.add(editTextTextMultiLine10.text.toString())
         mbtiTest.PorJAnswer.add(editTextTextMultiLine10_1.text.toString())
-        mbtiTest.PorJAnswer.add(editTextTextMultiLine10_1.text.toString())
-        mbtiTest.PorJQuestion.add(editTextTextMultiLine10.text.toString())
-        mbtiTest.PorJAnswer.add(editTextTextMultiLine10_1.text.toString())
-        mbtiTest.PorJAnswer.add(editTextTextMultiLine10_1.text.toString())
-        mbtiTest.PorJQuestion.add(editTextTextMultiLine10.text.toString())
-        mbtiTest.PorJAnswer.add(editTextTextMultiLine10_1.text.toString())
-        mbtiTest.PorJAnswer.add(editTextTextMultiLine10_1.text.toString())
+        mbtiTest.PorJAnswer.add(editTextTextMultiLine10_2.text.toString())
+        mbtiTest.PorJQuestion.add(editTextTextMultiLine11.text.toString())
+        mbtiTest.PorJAnswer.add(editTextTextMultiLine11_1.text.toString())
+        mbtiTest.PorJAnswer.add(editTextTextMultiLine11_2.text.toString())
+        mbtiTest.PorJQuestion.add(editTextTextMultiLine12.text.toString())
+        mbtiTest.PorJAnswer.add(editTextTextMultiLine12_1.text.toString())
+        mbtiTest.PorJAnswer.add(editTextTextMultiLine12_2.text.toString())
 
     }
 }
