@@ -1,7 +1,9 @@
 package com.example.mybti
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import kotlinx.android.synthetic.main.activity_test_result_l.*
 
 class test_result : AppCompatActivity() {
@@ -9,6 +11,21 @@ class test_result : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_test_result_l)
 
+        val temp = this.intent.getParcelableExtra<MbtiTestResult>("result")
+        Log.d("tag", temp.mbti[0] + temp.mbti[1] + temp.mbti[2] + temp.mbti[3])
+        temp.resultCalculating()
+        textView3.text = temp.mbti[0] + temp.mbti[1] + temp.mbti[2] + temp.mbti[3]
 
+        val intentMain = Intent(this, activity_main::class.java)
+        button4.setOnClickListener {
+            startActivity(intentMain)
+            finish()
+        }
+
+        val intentTest = Intent(this, test_main::class.java)
+        button5.setOnClickListener {
+            startActivity(intentTest)
+            finish()
+        }
     }
 }

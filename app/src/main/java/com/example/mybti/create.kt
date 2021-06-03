@@ -60,7 +60,7 @@ class create : AppCompatActivity() {
                 try {
                     val bitmap = MediaStore.Images.Media.getBitmap(contentResolver,currentImageUrl)
                     Log.d("tag", currentImageUrl.toString())
-                    val scale = 8
+                    val scale = 1
                     Log.d("tag", scale.toString())
                     val resized = Bitmap.createScaledBitmap(bitmap, (bitmap.width)/scale, (bitmap.height)/scale, true)
                     imageView.setImageBitmap(resized)
