@@ -1,91 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DBE6FF"
+    android:orientation="vertical"
     tools:context=".activity_main">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+    <TextView
+        android:id="@+id/textView13"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:background="#FEA82F"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toTopOf="@+id/textView1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:title="MyBTI" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="245dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="78dp"
-        android:layout_marginBottom="33dp"
-        android:background="@drawable/teduri"
-        android:gravity="center_horizontal"
-        android:text="@string/title_ActivityMain"
-        android:textColor="#FEA82F"
-        android:textIsSelectable="false"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:fontFamily="@font/nexonfootballgothicl"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="95dp"
-        android:backgroundTint="#FEA82F"
-        android:text="@string/Button_MakingTest"
-        android:fontFamily="@font/nexonfootballgothicl"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        android:layout_marginVertical="20dp"
+        android:text="MyBTI"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:typeface="normal" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="347dp"
-        android:layout_height="390dp"
-        android:layout_marginBottom="82dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_edge"
         android:backgroundTint="#FFFFFF"
         android:foregroundTint="#000000"
         android:orientation="vertical"
         android:outlineAmbientShadowColor="#000000"
+        android:paddingLeft="40dp"
+        android:paddingTop="40dp"
+        android:paddingRight="40dp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView1">
+        app:layout_constraintStart_toStartOf="parent">
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#FEA82F"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_edge_button"
+            android:backgroundTint="#E9E3FF"
+            android:fontFamily="@font/nexonfootballgothicl"
             android:text="@string/SampleB_1"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:fontFamily="@font/nexonfootballgothicl"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#FEA82F"
+            android:background="@drawable/rounded_edge_button"
+            android:backgroundTint="#E9E3FF"
+            android:fontFamily="@font/nexonfootballgothicl"
             android:text="@string/SampleB_2"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:fontFamily="@font/nexonfootballgothicl"/>
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="300dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="420dp"
+            android:background="@drawable/button_10dp"
+            android:backgroundTint="#4318FF"
+            android:fontFamily="@font/nexonfootballgothicl"
+            android:text="@string/Button_MakingTest"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.288"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
