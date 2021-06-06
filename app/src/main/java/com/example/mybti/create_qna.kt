@@ -32,7 +32,7 @@ class create_qna : AppCompatActivity() {
         }
 
 
-        val intent = Intent(this, activity_main::class.java) // 인텐트를 생성
+        val intent = Intent(this, create_mbti::class.java) // 인텐트를 생성
 
         nextbtn.setOnClickListener { // 버튼 클릭시 할 행동
             saveTest()
@@ -48,42 +48,42 @@ class create_qna : AppCompatActivity() {
         mbtiTest.EorIQuestion.add(editTextTextMultiLine1.text.toString())
         mbtiTest.EorIAnswer.add(editTextTextMultiLine1_1.text.toString())
         mbtiTest.EorIAnswer.add(editTextTextMultiLine1_2.text.toString())
-        mbtiTest.EorIQuestion.add(editTextTextMultiLine2.text.toString())
-        mbtiTest.EorIAnswer.add(editTextTextMultiLine2_1.text.toString())
-        mbtiTest.EorIAnswer.add(editTextTextMultiLine2_2.text.toString())
-        mbtiTest.EorIQuestion.add(editTextTextMultiLine3.text.toString())
-        mbtiTest.EorIAnswer.add(editTextTextMultiLine3_1.text.toString())
-        mbtiTest.EorIAnswer.add(editTextTextMultiLine3_2.text.toString())
-
-        mbtiTest.SorNQuestion.add(editTextTextMultiLine4.text.toString())
-        mbtiTest.SorNAnswer.add(editTextTextMultiLine4_1.text.toString())
-        mbtiTest.SorNAnswer.add(editTextTextMultiLine4_2.text.toString())
-        mbtiTest.SorNQuestion.add(editTextTextMultiLine5.text.toString())
-        mbtiTest.SorNAnswer.add(editTextTextMultiLine5_1.text.toString())
-        mbtiTest.SorNAnswer.add(editTextTextMultiLine5_2.text.toString())
-        mbtiTest.SorNQuestion.add(editTextTextMultiLine6.text.toString())
-        mbtiTest.SorNAnswer.add(editTextTextMultiLine6_1.text.toString())
-        mbtiTest.SorNAnswer.add(editTextTextMultiLine6_2.text.toString())
-
-        mbtiTest.TorFQuestion.add(editTextTextMultiLine7.text.toString())
-        mbtiTest.TorFAnswer.add(editTextTextMultiLine7_1.text.toString())
-        mbtiTest.TorFAnswer.add(editTextTextMultiLine7_2.text.toString())
-        mbtiTest.TorFQuestion.add(editTextTextMultiLine8.text.toString())
-        mbtiTest.TorFAnswer.add(editTextTextMultiLine8_1.text.toString())
-        mbtiTest.TorFAnswer.add(editTextTextMultiLine8_2.text.toString())
-        mbtiTest.TorFQuestion.add(editTextTextMultiLine9.text.toString())
-        mbtiTest.TorFAnswer.add(editTextTextMultiLine9_1.text.toString())
-        mbtiTest.TorFAnswer.add(editTextTextMultiLine9_2.text.toString())
-
-        mbtiTest.PorJQuestion.add(editTextTextMultiLine10.text.toString())
-        mbtiTest.PorJAnswer.add(editTextTextMultiLine10_1.text.toString())
-        mbtiTest.PorJAnswer.add(editTextTextMultiLine10_2.text.toString())
-        mbtiTest.PorJQuestion.add(editTextTextMultiLine11.text.toString())
-        mbtiTest.PorJAnswer.add(editTextTextMultiLine11_1.text.toString())
-        mbtiTest.PorJAnswer.add(editTextTextMultiLine11_2.text.toString())
-        mbtiTest.PorJQuestion.add(editTextTextMultiLine12.text.toString())
-        mbtiTest.PorJAnswer.add(editTextTextMultiLine12_1.text.toString())
-        mbtiTest.PorJAnswer.add(editTextTextMultiLine12_2.text.toString())
+//        mbtiTest.EorIQuestion.add(editTextTextMultiLine2.text.toString())
+//        mbtiTest.EorIAnswer.add(editTextTextMultiLine2_1.text.toString())
+//        mbtiTest.EorIAnswer.add(editTextTextMultiLine2_2.text.toString())
+//        mbtiTest.EorIQuestion.add(editTextTextMultiLine3.text.toString())
+//        mbtiTest.EorIAnswer.add(editTextTextMultiLine3_1.text.toString())
+//        mbtiTest.EorIAnswer.add(editTextTextMultiLine3_2.text.toString())
+//
+//        mbtiTest.SorNQuestion.add(editTextTextMultiLine4.text.toString())
+//        mbtiTest.SorNAnswer.add(editTextTextMultiLine4_1.text.toString())
+//        mbtiTest.SorNAnswer.add(editTextTextMultiLine4_2.text.toString())
+//        mbtiTest.SorNQuestion.add(editTextTextMultiLine5.text.toString())
+//        mbtiTest.SorNAnswer.add(editTextTextMultiLine5_1.text.toString())
+//        mbtiTest.SorNAnswer.add(editTextTextMultiLine5_2.text.toString())
+//        mbtiTest.SorNQuestion.add(editTextTextMultiLine6.text.toString())
+//        mbtiTest.SorNAnswer.add(editTextTextMultiLine6_1.text.toString())
+//        mbtiTest.SorNAnswer.add(editTextTextMultiLine6_2.text.toString())
+//
+//        mbtiTest.TorFQuestion.add(editTextTextMultiLine7.text.toString())
+//        mbtiTest.TorFAnswer.add(editTextTextMultiLine7_1.text.toString())
+//        mbtiTest.TorFAnswer.add(editTextTextMultiLine7_2.text.toString())
+//        mbtiTest.TorFQuestion.add(editTextTextMultiLine8.text.toString())
+//        mbtiTest.TorFAnswer.add(editTextTextMultiLine8_1.text.toString())
+//        mbtiTest.TorFAnswer.add(editTextTextMultiLine8_2.text.toString())
+//        mbtiTest.TorFQuestion.add(editTextTextMultiLine9.text.toString())
+//        mbtiTest.TorFAnswer.add(editTextTextMultiLine9_1.text.toString())
+//        mbtiTest.TorFAnswer.add(editTextTextMultiLine9_2.text.toString())
+//
+//        mbtiTest.PorJQuestion.add(editTextTextMultiLine10.text.toString())
+//        mbtiTest.PorJAnswer.add(editTextTextMultiLine10_1.text.toString())
+//        mbtiTest.PorJAnswer.add(editTextTextMultiLine10_2.text.toString())
+//        mbtiTest.PorJQuestion.add(editTextTextMultiLine11.text.toString())
+//        mbtiTest.PorJAnswer.add(editTextTextMultiLine11_1.text.toString())
+//        mbtiTest.PorJAnswer.add(editTextTextMultiLine11_2.text.toString())
+//        mbtiTest.PorJQuestion.add(editTextTextMultiLine12.text.toString())
+//        mbtiTest.PorJAnswer.add(editTextTextMultiLine12_1.text.toString())
+//        mbtiTest.PorJAnswer.add(editTextTextMultiLine12_2.text.toString())
 
     }
 }
