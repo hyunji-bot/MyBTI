@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/ll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingHorizontal="20dp"
-    >
+    android:background="@drawable/rounded_edge_all"
+    android:backgroundTint="#F4F7FE"
+    android:orientation="vertical"><![CDATA[
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".create_qna">
+
+
+
+    ]]>
 
     <LinearLayout
         android:id="@+id/ll2"
@@ -18,10 +23,22 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/ham"
+        <TextView
+            android:id="@+id/textView17"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="20dp"
+            android:layout_marginLeft="60dp"
+            android:layout_weight="1"
+            android:text="테스트 문항 입력"
+            android:textAlignment="center"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/ham"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:background="#FFFFFF"
             android:foreground="@android:drawable/btn_star_big_on" />
 
@@ -34,18 +51,29 @@
         <Button
             android:id="@+id/nextbtn"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/color3"
-            android:text="다음" />
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_edge_button"
+            android:backgroundTint="#4318FF"
+            android:gravity="center|center_horizontal"
+            android:text="다음"
+            android:textColor="#FFFFFF" />
     </LinearLayout>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="600dp"
+        android:background="@drawable/rounded_edge_all"
+        android:backgroundTint="#ffffff"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="40dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_edge_all"
+            android:backgroundTint="#fff"
             android:orientation="vertical">
 
             <LinearLayout
@@ -65,9 +93,8 @@
                     android:layout_height="98dp"
                     android:ems="10"
                     android:gravity="start|top"
-                    android:inputType="textMultiLine"
                     android:hint="외향/내향형 구분 문제"
-                    />
+                    android:inputType="textMultiLine" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -78,8 +105,7 @@
                         android:id="@+id/textView1_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="E"
-                        />
+                        android:text="E" />
 
                     <EditText
                         android:id="@+id/editTextTextMultiLine1_1"
@@ -88,10 +114,10 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:gravity="start|top"
-                        android:inputType="textMultiLine"
                         android:hint="외향형 답변"
-                        />
+                        android:inputType="textMultiLine" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -111,11 +137,11 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:gravity="start|top"
-                        android:inputType="textMultiLine"
                         android:hint="내향형 답변"
-                        />
+                        android:inputType="textMultiLine" />
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -133,9 +159,8 @@
                     android:layout_height="98dp"
                     android:ems="10"
                     android:gravity="start|top"
-                    android:inputType="textMultiLine"
                     android:hint="외향/내향형 구분 문제"
-                    />
+                    android:inputType="textMultiLine" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -155,9 +180,10 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:gravity="start|top"
-                        android:inputType="textMultiLine"
-                        android:hint="외향형 답변"/>
+                        android:hint="외향형 답변"
+                        android:inputType="textMultiLine" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -177,10 +203,11 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:gravity="start|top"
-                        android:inputType="textMultiLine"
-                        android:hint="내향형 답변"/>
+                        android:hint="내향형 답변"
+                        android:inputType="textMultiLine" />
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -198,9 +225,8 @@
                     android:layout_height="98dp"
                     android:ems="10"
                     android:gravity="start|top"
-                    android:inputType="textMultiLine"
                     android:hint="외향/내향형 구분 문제"
-                    />
+                    android:inputType="textMultiLine" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -220,9 +246,10 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:gravity="start|top"
-                        android:inputType="textMultiLine"
-                        android:hint="외향형 답변"/>
+                        android:hint="외향형 답변"
+                        android:inputType="textMultiLine" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -242,10 +269,11 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:gravity="start|top"
-                        android:inputType="textMultiLine"
-                        android:hint="내향형 답변"/>
+                        android:hint="내향형 답변"
+                        android:inputType="textMultiLine" />
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -263,8 +291,8 @@
                     android:layout_height="98dp"
                     android:ems="10"
                     android:gravity="start|top"
-                    android:inputType="textMultiLine"
-                    android:hint="감각/직관형 구분 문제"/>
+                    android:hint="감각/직관형 구분 문제"
+                    android:inputType="textMultiLine" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -284,9 +312,10 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:gravity="start|top"
-                        android:inputType="textMultiLine"
-                        android:hint="감각형 답변"/>
+                        android:hint="감각형 답변"
+                        android:inputType="textMultiLine" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -306,13 +335,14 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:gravity="start|top"
-                        android:inputType="textMultiLine"
-                        android:hint="인식형 답변"/>
+                        android:hint="인식형 답변"
+                        android:inputType="textMultiLine" />
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -327,8 +357,8 @@
                     android:layout_height="98dp"
                     android:ems="10"
                     android:gravity="start|top"
-                    android:inputType="textMultiLine"
-                    android:hint="감각/직관형 구분 문제"/>
+                    android:hint="감각/직관형 구분 문제"
+                    android:inputType="textMultiLine" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -348,9 +378,10 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:gravity="start|top"
-                        android:inputType="textMultiLine"
-                        android:hint="감각형 답변"/>
+                        android:hint="감각형 답변"
+                        android:inputType="textMultiLine" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -370,13 +401,14 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:gravity="start|top"
-                        android:inputType="textMultiLine"
-                        android:hint="인식형 답변"/>
+                        android:hint="인식형 답변"
+                        android:inputType="textMultiLine" />
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -391,8 +423,8 @@
                     android:layout_height="98dp"
                     android:ems="10"
                     android:gravity="start|top"
-                    android:inputType="textMultiLine"
-                    android:hint="감각/직관형 구분 문제"/>
+                    android:hint="감각/직관형 구분 문제"
+                    android:inputType="textMultiLine" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -412,9 +444,10 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:gravity="start|top"
-                        android:inputType="textMultiLine"
-                        android:hint="감각형 답변"/>
+                        android:hint="감각형 답변"
+                        android:inputType="textMultiLine" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -425,8 +458,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="0"
-                        android:text="N"
-                        android:hint="인식형 답변"/>
+                        android:hint="인식형 답변"
+                        android:text="N" />
 
                     <EditText
                         android:id="@+id/editTextTextMultiLine6_2"
@@ -438,9 +471,10 @@
                         android:inputType="textMultiLine" />
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -455,8 +489,8 @@
                     android:layout_height="98dp"
                     android:ems="10"
                     android:gravity="start|top"
-                    android:inputType="textMultiLine"
-                    android:hint="사고/감정형 구분 문제"/>
+                    android:hint="사고/감정형 구분 문제"
+                    android:inputType="textMultiLine" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -476,9 +510,10 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:gravity="start|top"
-                        android:inputType="textMultiLine"
-                        android:hint="사고형 답변"/>
+                        android:hint="사고형 답변"
+                        android:inputType="textMultiLine" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -498,21 +533,22 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:gravity="start|top"
-                        android:inputType="textMultiLine"
-                        android:hint="감정형 답변"/>
+                        android:hint="감정형 답변"
+                        android:inputType="textMultiLine" />
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="문제 8"
-                    android:hint="사고/감정형 구분 문제"/>
+                    android:hint="사고/감정형 구분 문제"
+                    android:text="문제 8" />
 
                 <EditText
                     android:id="@+id/editTextTextMultiLine8"
@@ -540,9 +576,10 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:gravity="start|top"
-                        android:inputType="textMultiLine"
-                        android:hint="사고형 답변"/>
+                        android:hint="사고형 답변"
+                        android:inputType="textMultiLine" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -562,13 +599,14 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:gravity="start|top"
-                        android:inputType="textMultiLine"
-                        android:hint="감정형 답변"/>
+                        android:hint="감정형 답변"
+                        android:inputType="textMultiLine" />
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -583,8 +621,8 @@
                     android:layout_height="98dp"
                     android:ems="10"
                     android:gravity="start|top"
-                    android:inputType="textMultiLine"
-                    android:hint="사고/감정형 구분 문제"/>
+                    android:hint="사고/감정형 구분 문제"
+                    android:inputType="textMultiLine" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -604,9 +642,10 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:gravity="start|top"
-                        android:inputType="textMultiLine"
-                        android:hint="사고형 답변"/>
+                        android:hint="사고형 답변"
+                        android:inputType="textMultiLine" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -617,8 +656,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="0"
-                        android:text="F"
-                        android:hint="감정형 답변"/>
+                        android:hint="감정형 답변"
+                        android:text="F" />
 
                     <EditText
                         android:id="@+id/editTextTextMultiLine9_2"
@@ -630,9 +669,10 @@
                         android:inputType="textMultiLine" />
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -647,8 +687,8 @@
                     android:layout_height="98dp"
                     android:ems="10"
                     android:gravity="start|top"
-                    android:inputType="textMultiLine"
-                    android:hint="인식/판단형 구분 문제"/>
+                    android:hint="인식/판단형 구분 문제"
+                    android:inputType="textMultiLine" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -668,9 +708,10 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:gravity="start|top"
-                        android:inputType="textMultiLine"
-                        android:hint="인식형 답변"/>
+                        android:hint="인식형 답변"
+                        android:inputType="textMultiLine" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -690,13 +731,14 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:gravity="start|top"
-                        android:inputType="textMultiLine"
-                        android:hint="판단형 답변"/>
+                        android:hint="판단형 답변"
+                        android:inputType="textMultiLine" />
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -711,8 +753,8 @@
                     android:layout_height="98dp"
                     android:ems="10"
                     android:gravity="start|top"
-                    android:inputType="textMultiLine"
-                    android:hint="인식/판단형 구분 문제"/>
+                    android:hint="인식/판단형 구분 문제"
+                    android:inputType="textMultiLine" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -732,9 +774,10 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:gravity="start|top"
-                        android:inputType="textMultiLine"
-                        android:hint="인식형 답변"/>
+                        android:hint="인식형 답변"
+                        android:inputType="textMultiLine" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -745,8 +788,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="0"
-                        android:text="J"
-                        />
+                        android:text="J" />
 
                     <EditText
                         android:id="@+id/editTextTextMultiLine11_2"
@@ -755,13 +797,14 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:gravity="start|top"
-                        android:inputType="textMultiLine"
-                        android:hint="판단형 답변"/>
+                        android:hint="판단형 답변"
+                        android:inputType="textMultiLine" />
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -776,8 +819,8 @@
                     android:layout_height="98dp"
                     android:ems="10"
                     android:gravity="start|top"
-                    android:inputType="textMultiLine"
-                    android:hint="인식/판단형 구분 문제"/>
+                    android:hint="인식/판단형 구분 문제"
+                    android:inputType="textMultiLine" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -797,9 +840,10 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:gravity="start|top"
-                        android:inputType="textMultiLine"
-                        android:hint="인식형 답변"/>
+                        android:hint="인식형 답변"
+                        android:inputType="textMultiLine" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -819,10 +863,59 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:gravity="start|top"
-                        android:inputType="textMultiLine"
-                        android:hint="판단형 답변"/>
+                        android:hint="판단형 답변"
+                        android:inputType="textMultiLine" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0"
+            android:background="@drawable/rounded_edge_all"
+            android:backgroundTint="#4318FF" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0"
+            android:backgroundTint="#E0E5F2"
+            app:srcCompat="@drawable/rounded_edge_button" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0"
+            android:backgroundTint="#E0E5F2"
+            app:srcCompat="@drawable/rounded_edge_button" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0"
+            android:backgroundTint="#E0E5F2"
+            app:srcCompat="@drawable/rounded_edge_button" />
+    </LinearLayout>
+
 </LinearLayout>
