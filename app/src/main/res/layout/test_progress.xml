@@ -44,19 +44,22 @@
 
         <include
             layout="@layout/question_4"
+            android:id="@+id/question_4"
             android:visibility="invisible" />
 
         <include
             layout="@layout/question_3"
+            android:id="@+id/question_3"
             android:visibility="invisible" />
 
         <include
             layout="@layout/question_2"
+            android:id="@+id/question_2"
             android:visibility="invisible" />
 
         <include
             layout="@layout/question_1"
-            android:layout_height="match_parent"
+            android:id="@+id/question_1"
             android:visibility="visible" />
 
 

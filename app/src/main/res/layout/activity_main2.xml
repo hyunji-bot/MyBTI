@@ -64,7 +64,7 @@
             android:layout_width="300dp"
             android:layout_height="46dp"
             android:layout_gravity="center"
-            android:layout_marginTop="420dp"
+            android:layout_marginTop="380dp"
             android:background="@drawable/button_10dp"
             android:backgroundTint="#4318FF"
             android:fontFamily="@font/nexonfootballgothicl"
