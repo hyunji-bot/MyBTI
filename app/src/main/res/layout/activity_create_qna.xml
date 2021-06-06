@@ -70,76 +70,45 @@
         android:paddingVertical="40dp">
 
         <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_edge_all"
+        android:backgroundTint="#fff"
+        android:divider="@color/color3"
+        android:dividerPadding="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/rounded_edge_all"
-            android:backgroundTint="#fff"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView1"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
                     android:text="문제 1" />
 
                 <EditText
                     android:id="@+id/editTextTextMultiLine1"
                     android:layout_width="match_parent"
                     android:layout_height="98dp"
+                    android:background="@drawable/button_10dp"
+                    android:backgroundTint="#F4F7FE"
                     android:ems="10"
                     android:gravity="start|top"
                     android:hint="외향/내향형 구분 문제"
-                    android:inputType="textMultiLine" />
+                    android:inputType="textMultiLine"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="15dp" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView1_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="E" />
-
-                    <EditText
-                        android:id="@+id/editTextTextMultiLine1_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:hint="외향형 답변"
-                        android:inputType="textMultiLine" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView1_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0"
-                        android:text="I" />
-
-                    <EditText
-                        android:id="@+id/editTextTextMultiLine1_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:hint="내향형 답변"
-                        android:inputType="textMultiLine" />
-                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
@@ -148,64 +117,26 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="match_parent"
+                    android:id="@+id/textView1_1"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="문제 2" />
+                    android:layout_marginBottom="5dp"
+                    android:text="A1 - E" />
 
                 <EditText
-                    android:id="@+id/editTextTextMultiLine2"
+                    android:id="@+id/editTextTextMultiLine1_1"
                     android:layout_width="match_parent"
-                    android:layout_height="98dp"
+                    android:layout_height="75dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_10dp"
+                    android:backgroundTint="#F4F7FE"
                     android:ems="10"
                     android:gravity="start|top"
-                    android:hint="외향/내향형 구분 문제"
-                    android:inputType="textMultiLine" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView2_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="E" />
-
-                    <EditText
-                        android:id="@+id/editTextTextMultiLine2_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:hint="외향형 답변"
-                        android:inputType="textMultiLine" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView2_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0"
-                        android:text="I" />
-
-                    <EditText
-                        android:id="@+id/editTextTextMultiLine2_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:hint="내향형 답변"
-                        android:inputType="textMultiLine" />
-                </LinearLayout>
+                    android:hint="외향형 답변"
+                    android:inputType="textMultiLine"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="10dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -214,659 +145,758 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="match_parent"
+                    android:id="@+id/textView1_2"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="문제 3" />
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0"
+                    android:text="A1 - I" />
 
                 <EditText
-                    android:id="@+id/editTextTextMultiLine3"
+                    android:id="@+id/editTextTextMultiLine1_2"
                     android:layout_width="match_parent"
-                    android:layout_height="98dp"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_10dp"
+                    android:backgroundTint="#F4F7FE"
                     android:ems="10"
                     android:gravity="start|top"
-                    android:hint="외향/내향형 구분 문제"
-                    android:inputType="textMultiLine" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView3_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="E" />
-
-                    <EditText
-                        android:id="@+id/editTextTextMultiLine3_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:hint="외향형 답변"
-                        android:inputType="textMultiLine" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView3_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0"
-                        android:text="I" />
-
-                    <EditText
-                        android:id="@+id/editTextTextMultiLine3_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:hint="내향형 답변"
-                        android:inputType="textMultiLine" />
-                </LinearLayout>
+                    android:hint="내향형 답변"
+                    android:inputType="textMultiLine"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="10dp" />
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="문제 4" />
-
-                <EditText
-                    android:id="@+id/editTextTextMultiLine4"
-                    android:layout_width="match_parent"
-                    android:layout_height="98dp"
-                    android:ems="10"
-                    android:gravity="start|top"
-                    android:hint="감각/직관형 구분 문제"
-                    android:inputType="textMultiLine" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView4_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="S" />
-
-                    <EditText
-                        android:id="@+id/editTextTextMultiLine4_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:hint="감각형 답변"
-                        android:inputType="textMultiLine" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView4_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0"
-                        android:text="N" />
-
-                    <EditText
-                        android:id="@+id/editTextTextMultiLine4_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:hint="인식형 답변"
-                        android:inputType="textMultiLine" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="문제 5" />
-
-                <EditText
-                    android:id="@+id/editTextTextMultiLine5"
-                    android:layout_width="match_parent"
-                    android:layout_height="98dp"
-                    android:ems="10"
-                    android:gravity="start|top"
-                    android:hint="감각/직관형 구분 문제"
-                    android:inputType="textMultiLine" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView5_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="S" />
-
-                    <EditText
-                        android:id="@+id/editTextTextMultiLine5_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:hint="감각형 답변"
-                        android:inputType="textMultiLine" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView5_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0"
-                        android:text="N" />
-
-                    <EditText
-                        android:id="@+id/editTextTextMultiLine5_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:hint="인식형 답변"
-                        android:inputType="textMultiLine" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="문제 6" />
-
-                <EditText
-                    android:id="@+id/editTextTextMultiLine6"
-                    android:layout_width="match_parent"
-                    android:layout_height="98dp"
-                    android:ems="10"
-                    android:gravity="start|top"
-                    android:hint="감각/직관형 구분 문제"
-                    android:inputType="textMultiLine" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView6_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="S" />
-
-                    <EditText
-                        android:id="@+id/editTextTextMultiLine6_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:hint="감각형 답변"
-                        android:inputType="textMultiLine" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView6_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0"
-                        android:hint="인식형 답변"
-                        android:text="N" />
-
-                    <EditText
-                        android:id="@+id/editTextTextMultiLine6_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:inputType="textMultiLine" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="문제 7" />
-
-                <EditText
-                    android:id="@+id/editTextTextMultiLine7"
-                    android:layout_width="match_parent"
-                    android:layout_height="98dp"
-                    android:ems="10"
-                    android:gravity="start|top"
-                    android:hint="사고/감정형 구분 문제"
-                    android:inputType="textMultiLine" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView7_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="T" />
-
-                    <EditText
-                        android:id="@+id/editTextTextMultiLine7_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:hint="사고형 답변"
-                        android:inputType="textMultiLine" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView7_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0"
-                        android:text="F" />
-
-                    <EditText
-                        android:id="@+id/editTextTextMultiLine7_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:hint="감정형 답변"
-                        android:inputType="textMultiLine" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="사고/감정형 구분 문제"
-                    android:text="문제 8" />
-
-                <EditText
-                    android:id="@+id/editTextTextMultiLine8"
-                    android:layout_width="match_parent"
-                    android:layout_height="98dp"
-                    android:ems="10"
-                    android:gravity="start|top"
-                    android:inputType="textMultiLine" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView8_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="T" />
-
-                    <EditText
-                        android:id="@+id/editTextTextMultiLine8_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:hint="사고형 답변"
-                        android:inputType="textMultiLine" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView8_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0"
-                        android:text="F" />
-
-                    <EditText
-                        android:id="@+id/editTextTextMultiLine8_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:hint="감정형 답변"
-                        android:inputType="textMultiLine" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="문제 9" />
-
-                <EditText
-                    android:id="@+id/editTextTextMultiLine9"
-                    android:layout_width="match_parent"
-                    android:layout_height="98dp"
-                    android:ems="10"
-                    android:gravity="start|top"
-                    android:hint="사고/감정형 구분 문제"
-                    android:inputType="textMultiLine" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView9_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="T" />
-
-                    <EditText
-                        android:id="@+id/editTextTextMultiLine9_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:hint="사고형 답변"
-                        android:inputType="textMultiLine" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView9_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0"
-                        android:hint="감정형 답변"
-                        android:text="F" />
-
-                    <EditText
-                        android:id="@+id/editTextTextMultiLine9_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:inputType="textMultiLine" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="문제 10" />
-
-                <EditText
-                    android:id="@+id/editTextTextMultiLine10"
-                    android:layout_width="match_parent"
-                    android:layout_height="98dp"
-                    android:ems="10"
-                    android:gravity="start|top"
-                    android:hint="인식/판단형 구분 문제"
-                    android:inputType="textMultiLine" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView10_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="P" />
-
-                    <EditText
-                        android:id="@+id/editTextTextMultiLine10_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:hint="인식형 답변"
-                        android:inputType="textMultiLine" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView10_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0"
-                        android:text="J" />
-
-                    <EditText
-                        android:id="@+id/editTextTextMultiLine10_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:hint="판단형 답변"
-                        android:inputType="textMultiLine" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView11"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="문제 11" />
-
-                <EditText
-                    android:id="@+id/editTextTextMultiLine11"
-                    android:layout_width="match_parent"
-                    android:layout_height="98dp"
-                    android:ems="10"
-                    android:gravity="start|top"
-                    android:hint="인식/판단형 구분 문제"
-                    android:inputType="textMultiLine" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView11_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="P" />
-
-                    <EditText
-                        android:id="@+id/editTextTextMultiLine11_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:hint="인식형 답변"
-                        android:inputType="textMultiLine" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView11_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0"
-                        android:text="J" />
-
-                    <EditText
-                        android:id="@+id/editTextTextMultiLine11_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:hint="판단형 답변"
-                        android:inputType="textMultiLine" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="문제 12" />
-
-                <EditText
-                    android:id="@+id/editTextTextMultiLine12"
-                    android:layout_width="match_parent"
-                    android:layout_height="98dp"
-                    android:ems="10"
-                    android:gravity="start|top"
-                    android:hint="인식/판단형 구분 문제"
-                    android:inputType="textMultiLine" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView12_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="P" />
-
-                    <EditText
-                        android:id="@+id/editTextTextMultiLine12_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:hint="인식형 답변"
-                        android:inputType="textMultiLine" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView12_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0"
-                        android:text="J" />
-
-                    <EditText
-                        android:id="@+id/editTextTextMultiLine12_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:hint="판단형 답변"
-                        android:inputType="textMultiLine" />
-                </LinearLayout>
-            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F4F7FE"
+            android:layout_marginVertical="20dp"/>
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/textView2"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="문제 2" />-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/editTextTextMultiLine2"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="98dp"-->
+            <!--                    android:ems="10"-->
+            <!--                    android:gravity="start|top"-->
+            <!--                    android:hint="외향/내향형 구분 문제"-->
+            <!--                    android:inputType="textMultiLine" />-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/textView2_1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:text="E" />-->
+
+            <!--                    <EditText-->
+            <!--                        android:id="@+id/editTextTextMultiLine2_1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:ems="10"-->
+            <!--                        android:gravity="start|top"-->
+            <!--                        android:hint="외향형 답변"-->
+            <!--                        android:inputType="textMultiLine" />-->
+            <!--                </LinearLayout>-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/textView2_2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="0"-->
+            <!--                        android:text="I" />-->
+
+            <!--                    <EditText-->
+            <!--                        android:id="@+id/editTextTextMultiLine2_2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:ems="10"-->
+            <!--                        android:gravity="start|top"-->
+            <!--                        android:hint="내향형 답변"-->
+            <!--                        android:inputType="textMultiLine" />-->
+            <!--                </LinearLayout>-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/textView3"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="문제 3" />-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/editTextTextMultiLine3"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="98dp"-->
+            <!--                    android:ems="10"-->
+            <!--                    android:gravity="start|top"-->
+            <!--                    android:hint="외향/내향형 구분 문제"-->
+            <!--                    android:inputType="textMultiLine" />-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/textView3_1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:text="E" />-->
+
+            <!--                    <EditText-->
+            <!--                        android:id="@+id/editTextTextMultiLine3_1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:ems="10"-->
+            <!--                        android:gravity="start|top"-->
+            <!--                        android:hint="외향형 답변"-->
+            <!--                        android:inputType="textMultiLine" />-->
+            <!--                </LinearLayout>-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/textView3_2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="0"-->
+            <!--                        android:text="I" />-->
+
+            <!--                    <EditText-->
+            <!--                        android:id="@+id/editTextTextMultiLine3_2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:ems="10"-->
+            <!--                        android:gravity="start|top"-->
+            <!--                        android:hint="내향형 답변"-->
+            <!--                        android:inputType="textMultiLine" />-->
+            <!--                </LinearLayout>-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/textView4"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="문제 4" />-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/editTextTextMultiLine4"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="98dp"-->
+            <!--                    android:ems="10"-->
+            <!--                    android:gravity="start|top"-->
+            <!--                    android:hint="감각/직관형 구분 문제"-->
+            <!--                    android:inputType="textMultiLine" />-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/textView4_1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:text="S" />-->
+
+            <!--                    <EditText-->
+            <!--                        android:id="@+id/editTextTextMultiLine4_1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:ems="10"-->
+            <!--                        android:gravity="start|top"-->
+            <!--                        android:hint="감각형 답변"-->
+            <!--                        android:inputType="textMultiLine" />-->
+            <!--                </LinearLayout>-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/textView4_2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="0"-->
+            <!--                        android:text="N" />-->
+
+            <!--                    <EditText-->
+            <!--                        android:id="@+id/editTextTextMultiLine4_2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:ems="10"-->
+            <!--                        android:gravity="start|top"-->
+            <!--                        android:hint="인식형 답변"-->
+            <!--                        android:inputType="textMultiLine" />-->
+            <!--                </LinearLayout>-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="0dp"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/textView5"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="문제 5" />-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/editTextTextMultiLine5"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="98dp"-->
+            <!--                    android:ems="10"-->
+            <!--                    android:gravity="start|top"-->
+            <!--                    android:hint="감각/직관형 구분 문제"-->
+            <!--                    android:inputType="textMultiLine" />-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/textView5_1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:text="S" />-->
+
+            <!--                    <EditText-->
+            <!--                        android:id="@+id/editTextTextMultiLine5_1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:ems="10"-->
+            <!--                        android:gravity="start|top"-->
+            <!--                        android:hint="감각형 답변"-->
+            <!--                        android:inputType="textMultiLine" />-->
+            <!--                </LinearLayout>-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/textView5_2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="0"-->
+            <!--                        android:text="N" />-->
+
+            <!--                    <EditText-->
+            <!--                        android:id="@+id/editTextTextMultiLine5_2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:ems="10"-->
+            <!--                        android:gravity="start|top"-->
+            <!--                        android:hint="인식형 답변"-->
+            <!--                        android:inputType="textMultiLine" />-->
+            <!--                </LinearLayout>-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="0dp"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/textView6"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="문제 6" />-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/editTextTextMultiLine6"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="98dp"-->
+            <!--                    android:ems="10"-->
+            <!--                    android:gravity="start|top"-->
+            <!--                    android:hint="감각/직관형 구분 문제"-->
+            <!--                    android:inputType="textMultiLine" />-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/textView6_1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:text="S" />-->
+
+            <!--                    <EditText-->
+            <!--                        android:id="@+id/editTextTextMultiLine6_1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:ems="10"-->
+            <!--                        android:gravity="start|top"-->
+            <!--                        android:hint="감각형 답변"-->
+            <!--                        android:inputType="textMultiLine" />-->
+            <!--                </LinearLayout>-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/textView6_2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="0"-->
+            <!--                        android:hint="인식형 답변"-->
+            <!--                        android:text="N" />-->
+
+            <!--                    <EditText-->
+            <!--                        android:id="@+id/editTextTextMultiLine6_2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:ems="10"-->
+            <!--                        android:gravity="start|top"-->
+            <!--                        android:inputType="textMultiLine" />-->
+            <!--                </LinearLayout>-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="0dp"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/textView7"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="문제 7" />-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/editTextTextMultiLine7"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="98dp"-->
+            <!--                    android:ems="10"-->
+            <!--                    android:gravity="start|top"-->
+            <!--                    android:hint="사고/감정형 구분 문제"-->
+            <!--                    android:inputType="textMultiLine" />-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/textView7_1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:text="T" />-->
+
+            <!--                    <EditText-->
+            <!--                        android:id="@+id/editTextTextMultiLine7_1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:ems="10"-->
+            <!--                        android:gravity="start|top"-->
+            <!--                        android:hint="사고형 답변"-->
+            <!--                        android:inputType="textMultiLine" />-->
+            <!--                </LinearLayout>-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/textView7_2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="0"-->
+            <!--                        android:text="F" />-->
+
+            <!--                    <EditText-->
+            <!--                        android:id="@+id/editTextTextMultiLine7_2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:ems="10"-->
+            <!--                        android:gravity="start|top"-->
+            <!--                        android:hint="감정형 답변"-->
+            <!--                        android:inputType="textMultiLine" />-->
+            <!--                </LinearLayout>-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="0dp"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/textView8"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:hint="사고/감정형 구분 문제"-->
+            <!--                    android:text="문제 8" />-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/editTextTextMultiLine8"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="98dp"-->
+            <!--                    android:ems="10"-->
+            <!--                    android:gravity="start|top"-->
+            <!--                    android:inputType="textMultiLine" />-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/textView8_1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:text="T" />-->
+
+            <!--                    <EditText-->
+            <!--                        android:id="@+id/editTextTextMultiLine8_1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:ems="10"-->
+            <!--                        android:gravity="start|top"-->
+            <!--                        android:hint="사고형 답변"-->
+            <!--                        android:inputType="textMultiLine" />-->
+            <!--                </LinearLayout>-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/textView8_2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="0"-->
+            <!--                        android:text="F" />-->
+
+            <!--                    <EditText-->
+            <!--                        android:id="@+id/editTextTextMultiLine8_2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:ems="10"-->
+            <!--                        android:gravity="start|top"-->
+            <!--                        android:hint="감정형 답변"-->
+            <!--                        android:inputType="textMultiLine" />-->
+            <!--                </LinearLayout>-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="0dp"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/textView9"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="문제 9" />-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/editTextTextMultiLine9"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="98dp"-->
+            <!--                    android:ems="10"-->
+            <!--                    android:gravity="start|top"-->
+            <!--                    android:hint="사고/감정형 구분 문제"-->
+            <!--                    android:inputType="textMultiLine" />-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/textView9_1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:text="T" />-->
+
+            <!--                    <EditText-->
+            <!--                        android:id="@+id/editTextTextMultiLine9_1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:ems="10"-->
+            <!--                        android:gravity="start|top"-->
+            <!--                        android:hint="사고형 답변"-->
+            <!--                        android:inputType="textMultiLine" />-->
+            <!--                </LinearLayout>-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/textView9_2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="0"-->
+            <!--                        android:hint="감정형 답변"-->
+            <!--                        android:text="F" />-->
+
+            <!--                    <EditText-->
+            <!--                        android:id="@+id/editTextTextMultiLine9_2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:ems="10"-->
+            <!--                        android:gravity="start|top"-->
+            <!--                        android:inputType="textMultiLine" />-->
+            <!--                </LinearLayout>-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="0dp"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/textView10"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="문제 10" />-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/editTextTextMultiLine10"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="98dp"-->
+            <!--                    android:ems="10"-->
+            <!--                    android:gravity="start|top"-->
+            <!--                    android:hint="인식/판단형 구분 문제"-->
+            <!--                    android:inputType="textMultiLine" />-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/textView10_1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:text="P" />-->
+
+            <!--                    <EditText-->
+            <!--                        android:id="@+id/editTextTextMultiLine10_1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:ems="10"-->
+            <!--                        android:gravity="start|top"-->
+            <!--                        android:hint="인식형 답변"-->
+            <!--                        android:inputType="textMultiLine" />-->
+            <!--                </LinearLayout>-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/textView10_2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="0"-->
+            <!--                        android:text="J" />-->
+
+            <!--                    <EditText-->
+            <!--                        android:id="@+id/editTextTextMultiLine10_2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:ems="10"-->
+            <!--                        android:gravity="start|top"-->
+            <!--                        android:hint="판단형 답변"-->
+            <!--                        android:inputType="textMultiLine" />-->
+            <!--                </LinearLayout>-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="0dp"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/textView11"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="문제 11" />-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/editTextTextMultiLine11"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="98dp"-->
+            <!--                    android:ems="10"-->
+            <!--                    android:gravity="start|top"-->
+            <!--                    android:hint="인식/판단형 구분 문제"-->
+            <!--                    android:inputType="textMultiLine" />-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/textView11_1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:text="P" />-->
+
+            <!--                    <EditText-->
+            <!--                        android:id="@+id/editTextTextMultiLine11_1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:ems="10"-->
+            <!--                        android:gravity="start|top"-->
+            <!--                        android:hint="인식형 답변"-->
+            <!--                        android:inputType="textMultiLine" />-->
+            <!--                </LinearLayout>-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/textView11_2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="0"-->
+            <!--                        android:text="J" />-->
+
+            <!--                    <EditText-->
+            <!--                        android:id="@+id/editTextTextMultiLine11_2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:ems="10"-->
+            <!--                        android:gravity="start|top"-->
+            <!--                        android:hint="판단형 답변"-->
+            <!--                        android:inputType="textMultiLine" />-->
+            <!--                </LinearLayout>-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="0dp"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/textView12"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="문제 12" />-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/editTextTextMultiLine12"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="98dp"-->
+            <!--                    android:ems="10"-->
+            <!--                    android:gravity="start|top"-->
+            <!--                    android:hint="인식/판단형 구분 문제"-->
+            <!--                    android:inputType="textMultiLine" />-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/textView12_1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:text="P" />-->
+
+            <!--                    <EditText-->
+            <!--                        android:id="@+id/editTextTextMultiLine12_1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:ems="10"-->
+            <!--                        android:gravity="start|top"-->
+            <!--                        android:hint="인식형 답변"-->
+            <!--                        android:inputType="textMultiLine" />-->
+            <!--                </LinearLayout>-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/textView12_2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="0"-->
+            <!--                        android:text="J" />-->
+
+            <!--                    <EditText-->
+            <!--                        android:id="@+id/editTextTextMultiLine12_2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:ems="10"-->
+            <!--                        android:gravity="start|top"-->
+            <!--                        android:hint="판단형 답변"-->
+            <!--                        android:inputType="textMultiLine" />-->
+            <!--                </LinearLayout>-->
+            <!--            </LinearLayout>-->
         </LinearLayout>
     </ScrollView>
 
