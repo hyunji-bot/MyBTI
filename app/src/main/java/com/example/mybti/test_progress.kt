@@ -20,14 +20,14 @@ class test_progress : AppCompatActivity() {
     var testmbti: MbtiTest = MbtiTest()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_test_progress_l)
+        setContentView(R.layout.test_progress)
 
         val intent = Intent(this, test_result::class.java)
 
         var i = 0
-        mbti = this.intent.getParcelableExtra<MbtiTest>("mbti") // "A"
-        // makeTest() // test 를 위해 만듦. 테스트 만들지 않고 진행을 원하면 "A"를 주석처리하고 이 주석 두개를 풀면 된다.
-        // mbti = testmbti
+        //mbti = this.intent.getParcelableExtra<MbtiTest>("mbti") // "A"
+         makeTest() // test 를 위해 만듦. 테스트 만들지 않고 진행을 원하면 "A"를 주석처리하고 이 주석 두개를 풀면 된다.
+        mbti = testmbti
         changeQuestion_EI(i)
 
         button8.setOnClickListener { // 버튼 클릭시 할 행동

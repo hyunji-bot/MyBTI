@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.activity_test_main_l.*
 class test_main : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_test_main_l)
+        setContentView(R.layout.test_main)
 
         val intent = Intent(this, activity_main::class.java) // 인텐트를 생성
         val intent2 = Intent(this, test_progress::class.java) // 인텐트를 생성
