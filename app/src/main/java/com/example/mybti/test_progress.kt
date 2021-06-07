@@ -77,7 +77,7 @@ class test_progress : AppCompatActivity() {
         button12.setOnClickListener { // 버튼 클릭시 할 행동
             i++
             if(i in 0..2) {
-                changeQuestion_TF(i)
+                changeQuestion_SN(i)
                 mbtiResult.SorNpoint++
                 Log.d("point", mbtiResult.SorNpoint.toString())
             }
