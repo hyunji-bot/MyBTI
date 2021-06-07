@@ -6,14 +6,25 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Base64
 import android.util.Log
+import android.view.View
 import kotlinx.android.synthetic.main.activity_create_qna.*
+import kotlinx.android.synthetic.main.create_qna_1.*
+import kotlinx.android.synthetic.main.create_qna_1.editTextTextMultiLine2_1
+import kotlinx.android.synthetic.main.create_qna_2.*
+import kotlinx.android.synthetic.main.create_qna_3.*
+import kotlinx.android.synthetic.main.create_qna_4.*
 import java.io.File
 
 class create_qna : AppCompatActivity() {
     var mbtiTest: MbtiTest = MbtiTest()
+    var i: Int = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_qna)
+
+        frameLayout.removeView(create_qna_2)
+        frameLayout.removeView(create_qna_3)
+        frameLayout.removeView(create_qna_4)
 
         Log.d("tag", intent.hasExtra("title").toString())
         if(intent.hasExtra("title")){
@@ -35,55 +46,100 @@ class create_qna : AppCompatActivity() {
         val intent = Intent(this, create_mbti::class.java) // 인텐트를 생성
 
         nextbtn.setOnClickListener { // 버튼 클릭시 할 행동
-            saveTest()
-            Log.d("mbti", mbtiTest.EorIAnswer[0])
-
-            intent.putExtra("mbti", mbtiTest)
-
-            startActivity(intent)  // 화면 전환하기
+            this.scroll.scrollY = 0
+            when(i) {
+                0 -> {
+                    saveTest_EI()
+                    frameLayout.removeView(create_qna_1)
+                    frameLayout.addView(create_qna_2)
+                    removeBar()
+                    bar.addView(imageView7)
+                    bar.addView(imageView6)
+                    bar.addView(imageView8)
+                    bar.addView(imageView9)
+                }
+                1 -> {
+                    saveTest_SN()
+                    frameLayout.removeView(create_qna_2)
+                    frameLayout.addView(create_qna_3)
+                    removeBar()
+                    bar.addView(imageView7)
+                    bar.addView(imageView8)
+                    bar.addView(imageView6)
+                    bar.addView(imageView9)
+                }
+                2 -> {
+                    saveTest_TF()
+                    frameLayout.removeView(create_qna_3)
+                    frameLayout.addView(create_qna_4)
+                    removeBar()
+                    bar.addView(imageView7)
+                    bar.addView(imageView8)
+                    bar.addView(imageView9)
+                    bar.addView(imageView6)
+                }
+                3 -> {
+                    saveTest_PJ()
+                    intent.putExtra("mbti", mbtiTest)
+                    startActivity(intent)  // 화면 전환하기
+                }
+            }
+            i++
         }
     }
 
-    fun saveTest() {
+    fun removeBar() {
+        bar.removeView(imageView6)
+        bar.removeView(imageView7)
+        bar.removeView(imageView8)
+        bar.removeView(imageView9)
+    }
+
+    fun saveTest_EI() {
         mbtiTest.EorIQuestion.add(editTextTextMultiLine1.text.toString())
         mbtiTest.EorIAnswer.add(editTextTextMultiLine1_1.text.toString())
         mbtiTest.EorIAnswer.add(editTextTextMultiLine1_2.text.toString())
-//        mbtiTest.EorIQuestion.add(editTextTextMultiLine2.text.toString())
-//        mbtiTest.EorIAnswer.add(editTextTextMultiLine2_1.text.toString())
-//        mbtiTest.EorIAnswer.add(editTextTextMultiLine2_2.text.toString())
-//        mbtiTest.EorIQuestion.add(editTextTextMultiLine3.text.toString())
-//        mbtiTest.EorIAnswer.add(editTextTextMultiLine3_1.text.toString())
-//        mbtiTest.EorIAnswer.add(editTextTextMultiLine3_2.text.toString())
-//
-//        mbtiTest.SorNQuestion.add(editTextTextMultiLine4.text.toString())
-//        mbtiTest.SorNAnswer.add(editTextTextMultiLine4_1.text.toString())
-//        mbtiTest.SorNAnswer.add(editTextTextMultiLine4_2.text.toString())
-//        mbtiTest.SorNQuestion.add(editTextTextMultiLine5.text.toString())
-//        mbtiTest.SorNAnswer.add(editTextTextMultiLine5_1.text.toString())
-//        mbtiTest.SorNAnswer.add(editTextTextMultiLine5_2.text.toString())
-//        mbtiTest.SorNQuestion.add(editTextTextMultiLine6.text.toString())
-//        mbtiTest.SorNAnswer.add(editTextTextMultiLine6_1.text.toString())
-//        mbtiTest.SorNAnswer.add(editTextTextMultiLine6_2.text.toString())
-//
-//        mbtiTest.TorFQuestion.add(editTextTextMultiLine7.text.toString())
-//        mbtiTest.TorFAnswer.add(editTextTextMultiLine7_1.text.toString())
-//        mbtiTest.TorFAnswer.add(editTextTextMultiLine7_2.text.toString())
-//        mbtiTest.TorFQuestion.add(editTextTextMultiLine8.text.toString())
-//        mbtiTest.TorFAnswer.add(editTextTextMultiLine8_1.text.toString())
-//        mbtiTest.TorFAnswer.add(editTextTextMultiLine8_2.text.toString())
-//        mbtiTest.TorFQuestion.add(editTextTextMultiLine9.text.toString())
-//        mbtiTest.TorFAnswer.add(editTextTextMultiLine9_1.text.toString())
-//        mbtiTest.TorFAnswer.add(editTextTextMultiLine9_2.text.toString())
-//
-//        mbtiTest.PorJQuestion.add(editTextTextMultiLine10.text.toString())
-//        mbtiTest.PorJAnswer.add(editTextTextMultiLine10_1.text.toString())
-//        mbtiTest.PorJAnswer.add(editTextTextMultiLine10_2.text.toString())
-//        mbtiTest.PorJQuestion.add(editTextTextMultiLine11.text.toString())
-//        mbtiTest.PorJAnswer.add(editTextTextMultiLine11_1.text.toString())
-//        mbtiTest.PorJAnswer.add(editTextTextMultiLine11_2.text.toString())
-//        mbtiTest.PorJQuestion.add(editTextTextMultiLine12.text.toString())
-//        mbtiTest.PorJAnswer.add(editTextTextMultiLine12_1.text.toString())
-//        mbtiTest.PorJAnswer.add(editTextTextMultiLine12_2.text.toString())
+        mbtiTest.EorIQuestion.add(editTextTextMultiLine2.text.toString())
+        mbtiTest.EorIAnswer.add(editTextTextMultiLine2_1.text.toString())
+        mbtiTest.EorIAnswer.add(editTextTextMultiLine2_2.text.toString())
+        mbtiTest.EorIQuestion.add(editTextTextMultiLine3.text.toString())
+        mbtiTest.EorIAnswer.add(editTextTextMultiLine3_1.text.toString())
+        mbtiTest.EorIAnswer.add(editTextTextMultiLine3_2.text.toString())
+    }
 
+    fun saveTest_SN() {
+        mbtiTest.SorNQuestion.add(editTextTextMultiLine4.text.toString())
+        mbtiTest.SorNAnswer.add(editTextTextMultiLine4_1.text.toString())
+        mbtiTest.SorNAnswer.add(editTextTextMultiLine4_2.text.toString())
+        mbtiTest.SorNQuestion.add(editTextTextMultiLine5.text.toString())
+        mbtiTest.SorNAnswer.add(editTextTextMultiLine5_1.text.toString())
+        mbtiTest.SorNAnswer.add(editTextTextMultiLine5_2.text.toString())
+        mbtiTest.SorNQuestion.add(editTextTextMultiLine6.text.toString())
+        mbtiTest.SorNAnswer.add(editTextTextMultiLine6_1.text.toString())
+        mbtiTest.SorNAnswer.add(editTextTextMultiLine6_2.text.toString())
+    }
+
+    fun saveTest_TF() {
+        mbtiTest.TorFQuestion.add(editTextTextMultiLine7.text.toString())
+        mbtiTest.TorFAnswer.add(editTextTextMultiLine7_1.text.toString())
+        mbtiTest.TorFAnswer.add(editTextTextMultiLine7_2.text.toString())
+        mbtiTest.TorFQuestion.add(editTextTextMultiLine8.text.toString())
+        mbtiTest.TorFAnswer.add(editTextTextMultiLine8_1.text.toString())
+        mbtiTest.TorFAnswer.add(editTextTextMultiLine8_2.text.toString())
+        mbtiTest.TorFQuestion.add(editTextTextMultiLine9.text.toString())
+        mbtiTest.TorFAnswer.add(editTextTextMultiLine9_1.text.toString())
+        mbtiTest.TorFAnswer.add(editTextTextMultiLine9_2.text.toString())
+    }
+
+    fun saveTest_PJ() {
+        mbtiTest.PorJQuestion.add(editTextTextMultiLine10.text.toString())
+        mbtiTest.PorJAnswer.add(editTextTextMultiLine10_1.text.toString())
+        mbtiTest.PorJAnswer.add(editTextTextMultiLine10_2.text.toString())
+        mbtiTest.PorJQuestion.add(editTextTextMultiLine11.text.toString())
+        mbtiTest.PorJAnswer.add(editTextTextMultiLine11_1.text.toString())
+        mbtiTest.PorJAnswer.add(editTextTextMultiLine11_2.text.toString())
+        mbtiTest.PorJQuestion.add(editTextTextMultiLine12.text.toString())
+        mbtiTest.PorJAnswer.add(editTextTextMultiLine12_1.text.toString())
+        mbtiTest.PorJAnswer.add(editTextTextMultiLine12_2.text.toString())
     }
 }

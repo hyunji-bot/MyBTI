@@ -22,10 +22,5 @@ class test_result : AppCompatActivity() {
             finish()
         }
 
-        val intentTest = Intent(this, test_main::class.java)
-        button5.setOnClickListener {
-            startActivity(intentTest)
-            finish()
-        }
     }
 }
