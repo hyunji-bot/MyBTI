@@ -62,6 +62,7 @@
     </LinearLayout>
 
     <ScrollView
+        android:id="@+id/scroll2"
         android:layout_width="match_parent"
         android:layout_height="600dp"
         android:background="@drawable/rounded_edge_all"
@@ -69,94 +70,26 @@
         android:paddingHorizontal="20dp"
         android:paddingVertical="40dp">
 
-        <LinearLayout
+        <FrameLayout
+            android:id="@+id/frameLayout2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/rounded_edge_all"
-            android:backgroundTint="#fff"
-            android:divider="@color/color3"
-            android:dividerPadding="10dp"
-            android:orientation="vertical">
+            android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+            <include
+                layout="@layout/create_mbti"
+                android:id="@+id/create_mbti"
+                android:visibility="visible" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+            <include
+                layout="@layout/create_mbti_2"
+                android:id="@+id/create_mbti_2"
+                android:visibility="visible" />
 
-                    <TextView
-                        android:id="@+id/textView1_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
-                        android:text="ENFP" />
-
-                    <EditText
-                        android:id="@+id/editTextTextMultiLine1_1"
-                        android:layout_width="match_parent"
-                        android:layout_height="75dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/button_10dp"
-                        android:backgroundTint="#F4F7FE"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:hint="ENFP 설명"
-                        android:inputType="textMultiLine"
-                        android:paddingHorizontal="10dp"
-                        android:paddingVertical="10dp" />
-                </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginVertical="20dp"
-                    android:background="#F4F7FE" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/textView1_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
-                        android:layout_weight="0"
-                        android:text="ENFJ" />
-
-                    <EditText
-                        android:id="@+id/editTextTextMultiLine1_2"
-                        android:layout_width="match_parent"
-                        android:layout_height="75dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/button_10dp"
-                        android:backgroundTint="#F4F7FE"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:hint="ENFJ 설명"
-                        android:inputType="textMultiLine"
-                        android:paddingHorizontal="10dp"
-                        android:paddingVertical="10dp" />
-                </LinearLayout>
-
-                <View
-                    android:id="@+id/view"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginVertical="20dp"
-                    android:background="#F4F7FE" />
-
-            </LinearLayout>
-        </LinearLayout>
+        </FrameLayout>
     </ScrollView>
 
     <LinearLayout
+        android:id="@+id/bar2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
