@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_edge_all"
+    android:backgroundTint="#fff"
+    android:divider="@color/color3"
+    android:dividerPadding="10dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="ISTJ" />
+
+            <EditText
+                android:id="@+id/resultMultiLine2_1"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_10dp"
+                android:backgroundTint="#F4F7FE"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="ISTJ 설명 - 청렴결백한 논리주의자"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="20dp"
+            android:background="#F4F7FE" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="0"
+                android:text="ISFJ" />
+
+            <EditText
+                android:id="@+id/resultMultiLine2_2"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_10dp"
+                android:backgroundTint="#F4F7FE"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="ISFJ 설명 - 용감한 수호자"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="20dp"
+            android:background="#F4F7FE" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="0"
+                android:text="ESTJ" />
+
+            <EditText
+                android:id="@+id/resultMultiLine2_3"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_10dp"
+                android:backgroundTint="#F4F7FE"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="ESTJ 설명 - 엄격한 관리자"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="20dp"
+            android:background="#F4F7FE" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="0"
+                android:text="ESFJ" />
+
+            <EditText
+                android:id="@+id/resultMultiLine2_4"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_10dp"
+                android:backgroundTint="#F4F7FE"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="ESFJ 설명 - 사교적인 외교관"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="20dp"
+                android:background="#F4F7FE" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0"
+                    android:text="ISTP" />
+
+                <EditText
+                    android:id="@+id/resultMultiLine2_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_10dp"
+                    android:backgroundTint="#F4F7FE"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="ISTP 설명 - 만능 재주꾼"
+                    android:inputType="textMultiLine"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="10dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="20dp"
+                android:background="#F4F7FE" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0"
+                    android:text="ISFP" />
+
+                <EditText
+                    android:id="@+id/resultMultiLine2_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_10dp"
+                    android:backgroundTint="#F4F7FE"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="ISFP 설명 - 호기심 많은 예술가"
+                    android:inputType="textMultiLine"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="10dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="20dp"
+                android:background="#F4F7FE" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0"
+                    android:text="ESTP" />
+
+                <EditText
+                    android:id="@+id/resultMultiLine2_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_10dp"
+                    android:backgroundTint="#F4F7FE"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="ESTP 설명 - 모험을 즐기는 사업가"
+                    android:inputType="textMultiLine"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="10dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="20dp"
+                android:background="#F4F7FE" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0"
+                    android:text="ESFP" />
+
+                <EditText
+                    android:id="@+id/resultMultiLine2_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_10dp"
+                    android:backgroundTint="#F4F7FE"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="ESFP 설명 - 자유로운 영혼의 연예인"
+                    android:inputType="textMultiLine"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="10dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="20dp"
+                android:background="#F4F7FE" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

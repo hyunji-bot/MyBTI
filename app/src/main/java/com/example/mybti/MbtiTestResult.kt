@@ -59,7 +59,7 @@ class MbtiTestResult (
             temp[3] = "J"
         else temp[3] = "P"
 
-        return temp.contentToString()
+        return temp[0] + temp[1] + temp[2] + temp[3]
     }
 
     fun worstCompatibility(): String {

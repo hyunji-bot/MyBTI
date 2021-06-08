@@ -19,7 +19,7 @@ data class MbtiTest(
     var PorJAnswer: ArrayList<String> = ArrayList(),
 
     // result 순서는
-    // ENTJ , ENTP, INTJ, INTP, ESTJ, ESFJ, ISTJ, ISFJ, ENFJ, ENFP, INFJ, INFP, ESTP, ESFP, ISTP, ISFP
+    // INTJ, INTP, ENTJ , ENTP, INFJ, INFP, ENFJ, ENFP, ISTJ, ISFJ, ESTJ, ESFJ, ISTP, ISFP, ESTP, ESFP
 
     var result: ArrayList<String> = ArrayList(),
     var result_images: ArrayList<Bitmap> = ArrayList(),

@@ -25,9 +25,16 @@ class test_progress : AppCompatActivity() {
         val intent = Intent(this, test_result::class.java)
 
         var i = 0
-        //mbti = this.intent.getParcelableExtra<MbtiTest>("mbti") // "A"
-         makeTest() // test 를 위해 만듦. 테스트 만들지 않고 진행을 원하면 "A"를 주석처리하고 이 주석 두개를 풀면 된다.
-        mbti = testmbti
+        mbti = this.intent.getParcelableExtra<MbtiTest>("mbti") // "A"
+        //makeTest() // test 를 위해 만듦. 테스트 만들지 않고 진행을 원하면 "A"를 주석처리하고 이 주석 두개를 풀면 된다.
+        //mbti = testmbti
+
+        imageView5.setImageBitmap(mbti.image[0])
+        imageView6.setImageBitmap(mbti.image[0])
+        imageView7.setImageBitmap(mbti.image[0])
+        imageView8.setImageBitmap(mbti.image[0])
+
+
         changeQuestion_EI(i)
 
         button8.setOnClickListener { // 버튼 클릭시 할 행동
@@ -127,6 +134,7 @@ class test_progress : AppCompatActivity() {
             }
             if(i == 3) {
                 i = 0
+                intent.putExtra("mbti", mbti)
                 intent.putExtra("result", mbtiResult)
                 startActivity(intent)
                 finish()
@@ -142,6 +150,7 @@ class test_progress : AppCompatActivity() {
             }
             if(i == 3) {
                 i = 0
+                intent.putExtra("mbti", mbti)
                 intent.putExtra("result", mbtiResult)
                 startActivity(intent)
                 finish()

@@ -1,5 +1,6 @@
 package com.example.mybti
 
+import android.app.ProgressDialog.show
 import android.content.Intent
 import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +8,7 @@ import android.os.Bundle
 import android.util.Base64
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_create_qna.*
 import kotlinx.android.synthetic.main.create_qna_1.*
 import kotlinx.android.synthetic.main.create_qna_1.editTextTextMultiLine2_1
@@ -49,14 +51,20 @@ class create_qna : AppCompatActivity() {
             this.scroll.scrollY = 0
             when(i) {
                 0 -> {
-                    saveTest_EI()
-                    frameLayout.removeView(create_qna_1)
-                    frameLayout.addView(create_qna_2)
-                    removeBar()
-                    bar.addView(imageView7)
-                    bar.addView(imageView6)
-                    bar.addView(imageView8)
-                    bar.addView(imageView9)
+                    if(check_EI()) {
+                        saveTest_EI()
+                        frameLayout.removeView(create_qna_1)
+                        frameLayout.addView(create_qna_2)
+                        removeBar()
+                        bar.addView(imageView7)
+                        bar.addView(imageView6)
+                        bar.addView(imageView8)
+                        bar.addView(imageView9)
+                        i++
+                    }
+                    else {
+                        Toast.makeText(this.getApplicationContext(),"입력사항을 모두 입력하세요!", Toast.LENGTH_SHORT).show()
+                    }
                 }
                 1 -> {
                     saveTest_SN()
@@ -67,6 +75,7 @@ class create_qna : AppCompatActivity() {
                     bar.addView(imageView8)
                     bar.addView(imageView6)
                     bar.addView(imageView9)
+                    i++
                 }
                 2 -> {
                     saveTest_TF()
@@ -77,14 +86,15 @@ class create_qna : AppCompatActivity() {
                     bar.addView(imageView8)
                     bar.addView(imageView9)
                     bar.addView(imageView6)
+                    i++
                 }
                 3 -> {
                     saveTest_PJ()
                     intent.putExtra("mbti", mbtiTest)
                     startActivity(intent)  // 화면 전환하기
+                    i++
                 }
             }
-            i++
         }
     }
 
@@ -93,6 +103,30 @@ class create_qna : AppCompatActivity() {
         bar.removeView(imageView7)
         bar.removeView(imageView8)
         bar.removeView(imageView9)
+    }
+
+    fun check_EI(): Boolean {
+        var result: Boolean = true
+        if(editTextTextMultiLine1.text.toString().equals(""))
+            result = false
+        if(editTextTextMultiLine1_1.text.toString().equals(""))
+            result = false
+        if(editTextTextMultiLine1_2.text.toString().equals(""))
+            result = false
+        if(editTextTextMultiLine2.text.toString().equals(""))
+            result = false
+        if(editTextTextMultiLine2_1.text.toString().equals(""))
+            result = false
+        if(editTextTextMultiLine2_2.text.toString().equals(""))
+            result = false
+        if(editTextTextMultiLine3.text.toString().equals(""))
+        result = false
+        if(editTextTextMultiLine3_1.text.toString().equals(""))
+            result = false
+        if(editTextTextMultiLine3_2.text.toString().equals(""))
+            result = false
+
+        return result
     }
 
     fun saveTest_EI() {
